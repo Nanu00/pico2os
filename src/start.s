@@ -9,7 +9,6 @@ vtable:
     b .
     b .
 
-.align 8
 .comm stack, 0x10000
 
 .global _start
