@@ -11,7 +11,8 @@ vtable:
     .word GenericExceptionHandler // SecureFault
     .word GenericExceptionHandler // Reserved
     .word GenericExceptionHandler // Reserved
-    .word GenericExceptionHandler // SVCall
+    .word GenericExceptionHandler // Reserved
+    .word SVCallHandler           // SVCall
     .word GenericExceptionHandler // DebugMonitor
     .word GenericExceptionHandler // Reserved
     .word GenericExceptionHandler // PendSV

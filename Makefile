@@ -11,7 +11,7 @@ CFLAGS=-target arm-none-eabi -mcpu=cortex-m33 -mfloat-abi=soft -march=armv8m.mai
 ASFLAGS=$(CFLAGS)
 LDFLAGS=-T link.ld
 
-C_SRC=src/main.c src/interrupts.c src/uart.c
+C_SRC=src/main.c src/interrupts.c src/uart.c src/syscalls.c
 AS_SRC=src/start.s src/vtable.s
 
 C_INCLUDES=inc/
