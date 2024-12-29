@@ -1,6 +1,10 @@
-extern int uart_print(char* str);
+#include "main.h"
+#include "uart.h"
+#include "interrupts.h"
 
-int main (void) {
-    uart_print("Printed from C!\n");
+#define VTOR_LOC
+
+void kmain (void) {
+    UART_puts("Kernel Loaded\n");
     while (1);
 }
